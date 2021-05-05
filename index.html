@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Camila B. Carlocchia</title>
+
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div>
-            <h1>Hello World</h1>
-            <p>I'm hosted with Github Pages </p>        
-            <div id="like_button_container"></div>
+            <h1 id="head">Welcome!</h1>
+            <h3 id="subtitle">this is just another version of my bio</h2> 
         </div>
-        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-        <script src="like_button.js"></script>
+        <div class="button-wrapper">
+            <button id="who-button" onclick="unfoldInfo('whoAmI')">who</button>
+            <button id="links-button" onclick="unfoldInfo('links')">links</button>
+            <button id="working-button" onclick="unfoldInfo('working')">working</button>
+            <button id="learning-button" onclick="unfoldInfo('learning')">learning</button>
+            <button id="pronouns-button" onclick="unfoldInfo('pronouns')">pronouns</button>
+            <button id="tecnologies-button" onclick="unfoldInfo('tecnologies')">tecnologies</button>
+        </div>
+        <div id="info-wrapper">
+            <div id="info-title"></div>
+            <div id="info"></div>
+            
+        </div>
+        <script>
+            
+
+            function unfoldInfo(selected_id) {
+                $('#info-title').empty();
+                $('#info').empty();
+                console.log(selected_id);
+                $.getJSON("info.json", function(json) {
+                var obj = json.find(ele => ele.id == selected_id);
+                $('#info-title').append(obj.title);
+                if (obj.photo !== null) {$('#info').append(obj.photo)};
+                $('#info').append(obj.text);
+                });
+            }
+// 
+            // function whoAmIButton() {
+            //     $('#info-title').empty();
+            //     $('#info').empty();
+            //     var title = "<h2> Who am I? </h2>";
+            //     var text = "<h3 id='list'>●Camila Belén Carlocchia <br> ●22 years old <br> ●Argentinian <br> ●Software Engineering student at the Universidad de Buenos Aires <br> ●Fullstack Developer at Arsat";
+            //     var photo = '<img src="./camila.jpg" alt="myself" id="my-photo" align="left">';
+            //     $('#info-title').append(title);
+            //     $('#info').append(photo);
+            //     $('#info').append(text);
+            // }
+        </script>
     </body>
     
 </html>
