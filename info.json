@@ -12,12 +12,12 @@
 {
     "id": "working",
     "title":"<h2> What I'm currently working on? </h2>",
-    "text": "<h3> On a mobile app using AndroidStudio </h3>"
+    "text": "<h3> Migrating a project from python 2 to python 3 <br> and from Bottle to Flask</h3>"
 },
 {
     "id": "learning",
     "title":"<h2> What I'm currently learning? </h2>",
-    "text": "<h3> Mobile developing and Frontend tecnologies, <br>like html5, css, javascript & reactjs</h3>"
+    "text": "<h3> Flask, and frontend tecnologies <br>like html5, css, javascript & reactjs</h3>"
 },
 {
     "id": "pronouns",
