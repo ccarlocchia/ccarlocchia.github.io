@@ -41,6 +41,7 @@ export const projects: Project[] = [
     category: 'Backend',
     technologies: ['Go', 'Gin', 'REST API'],
     repository: 'https://github.com/ccarlocchia/ItemsAPI',
+    demo: 'https://ccarlocchia.github.io/ItemsAPI/',
     visual: 'api',
     label: 'A small API, neatly layered',
   },
