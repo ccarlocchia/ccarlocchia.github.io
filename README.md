@@ -17,6 +17,6 @@ Edit the typed project list in [`src/projects.ts`](./src/projects.ts). Add a rep
 
 ## Deploy
 
-The `Deploy to GitHub Pages` workflow builds the site and publishes the `dist` directory when changes are pushed to `main`. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+The `Deploy to GitHub Pages` workflow builds the site and publishes the `dist` directory when changes are pushed to `main`. For the compiled app to be served, set **Repository Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow cannot change this repository setting. If Pages is set to deploy from a branch, it serves the uncompiled source `index.html` instead of the Vite build.
 
 This repository is `ccarlocchia.github.io`, so the site is built for the root path and will be available at `https://ccarlocchia.github.io/`.
