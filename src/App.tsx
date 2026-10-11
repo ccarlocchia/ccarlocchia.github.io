@@ -49,6 +49,28 @@ function ProjectArtwork({ project }: { project: Project }) {
     );
   }
 
+  if (project.visual === 'woki') {
+    return (
+      <div className="artwork artwork--woki" aria-hidden="true">
+        <span className="woki-badge">brain mode</span>
+        <div className="woki-board">
+          <span className="woki-seat woki-seat--one" />
+          <span className="woki-seat woki-seat--two" />
+          <span className="woki-seat woki-seat--three" />
+          <span className="woki-seat woki-seat--four woki-seat--active" />
+          <span className="woki-seat woki-seat--five" />
+          <span className="woki-seat woki-seat--six" />
+        </div>
+        <div className="woki-graph" aria-hidden="true">
+          <span className="woki-node woki-node--one" />
+          <span className="woki-node woki-node--two" />
+          <span className="woki-node woki-node--three" />
+        </div>
+        <span className="woki-caption">2 tables / 4 guests</span>
+      </div>
+    );
+  }
+
   return (
     <div className="artwork artwork--api" aria-hidden="true">
       <span className="api-stamp">BUILT TO<br />CONNECT</span>

@@ -7,7 +7,7 @@ export interface Project {
   technologies: string[];
   repository: string;
   demo?: string;
-  visual: 'todo' | 'dictionary' | 'api';
+  visual: 'todo' | 'dictionary' | 'api' | 'woki';
   label: string;
 }
 
@@ -43,6 +43,17 @@ export const projects: Project[] = [
     repository: 'https://github.com/ccarlocchia/ItemsAPI',
     demo: 'https://ccarlocchia.github.io/ItemsAPI/',
     visual: 'api',
+    label: 'A small API, neatly layered',
+  },
+  {
+    name: 'woki-brain',
+    description:
+      'A compact, production-ready booking engine for restaurants that intelligently discovers when and how to seat a party using single tables or table combinations.',
+    category: 'Backend',
+    technologies: ['Node.js', 'Typescript', 'Express'],
+    repository: 'https://github.com/ccarlocchia/woki-brain',
+    demo: 'https://ccarlocchia.github.io/woki-brain/',
+    visual: 'woki',
     label: 'A small API, neatly layered',
   },
 ];
