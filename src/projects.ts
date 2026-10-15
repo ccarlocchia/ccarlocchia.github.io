@@ -7,7 +7,7 @@ export interface Project {
   technologies: string[];
   repository: string;
   demo?: string;
-  visual: 'todo' | 'dictionary' | 'api' | 'woki';
+  visual: 'todo' | 'dictionary' | 'api' | 'woki' | 'adp';
   label: string;
 }
 
@@ -55,5 +55,16 @@ export const projects: Project[] = [
     demo: 'https://ccarlocchia.github.io/woki-brain/',
     visual: 'woki',
     label: 'A small API, neatly layered',
+  },
+  {
+    name: 'abstract-data-type-playground',
+    description:
+      'An interactive data-structure playground for exploring abstract data types and their behavior.',
+    category: 'Backend',
+    technologies: ['SvelteKit', 'Tailwind CSS'],
+    repository: 'https://github.com/ccarlocchia/abstract-data-type-playground',
+    demo: 'https://ccarlocchia.github.io/abstract-data-type-playground/',
+    visual: 'adp',
+    label: 'Visualize abstract data types in action',
   },
 ];

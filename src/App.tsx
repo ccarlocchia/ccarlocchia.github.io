@@ -71,6 +71,26 @@ function ProjectArtwork({ project }: { project: Project }) {
     );
   }
 
+  if (project.visual === 'adp') {
+    return (
+      <div className="artwork artwork--adp" aria-hidden="true">
+        <span className="adp-badge">data structure</span>
+        <div className="adp-structure" aria-hidden="true">
+          <span className="adp-stack adp-stack--one" />
+          <span className="adp-stack adp-stack--two" />
+          <span className="adp-stack adp-stack--three" />
+        </div>
+        <div className="adp-network" aria-hidden="true">
+          <span className="adp-node adp-node--primary">root</span>
+          <span className="adp-node adp-node--child">left</span>
+          <span className="adp-node adp-node--child">right</span>
+          <span className="adp-node adp-node--leaf">leaf</span>
+        </div>
+        <span className="adp-caption">stack · tree · flow</span>
+      </div>
+    );
+  }
+
   return (
     <div className="artwork artwork--api" aria-hidden="true">
       <span className="api-stamp">BUILT TO<br />CONNECT</span>
