@@ -7,7 +7,7 @@ export interface Project {
   technologies: string[];
   repository: string;
   demo?: string;
-  visual: 'todo' | 'dictionary' | 'api' | 'woki' | 'adp';
+  visual: 'todo' | 'dictionary' | 'api' | 'woki' | 'adp' | 'js30';
   label: string;
 }
 
@@ -66,5 +66,16 @@ export const projects: Project[] = [
     demo: 'https://ccarlocchia.github.io/abstract-data-type-playground/',
     visual: 'adp',
     label: 'Visualize abstract data types in action',
+  },
+  {
+    name: '30 Days of JavaScript',
+    description:
+      'A playful collection of JavaScript experiments, tiny tools, and projects to explore over 30 days.',
+    category: 'Frontend',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    repository: 'https://github.com/ccarlocchia/30in30js',
+    demo: 'https://ccarlocchia.github.io/30in30js/',
+    visual: 'js30',
+    label: '30 days of playful JavaScript',
   },
 ];

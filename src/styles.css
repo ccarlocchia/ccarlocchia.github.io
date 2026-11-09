@@ -456,6 +456,78 @@ button:focus-visible {
   overflow: hidden;
 }
 
+.artwork--js30 {
+  display: grid;
+  place-items: center;
+  background: #e8d9f0;
+}
+
+.js30-cabinet {
+  position: relative;
+  z-index: 1;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 19px 13px;
+  border: 1px solid rgba(80, 48, 101, 0.18);
+  background: #f7f0fa;
+  box-shadow: 7px 8px 0 rgba(91, 56, 114, 0.12);
+  transform: rotate(-3deg);
+}
+
+.js30-cabinet__eyebrow,
+.js30-cabinet__footer {
+  color: #806b8e;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.7px;
+}
+
+.js30-cabinet__title {
+  margin: 8px 0 7px;
+  color: #392646;
+  font-family: var(--display);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -1.6px;
+  line-height: 0.95;
+}
+
+.js30-cabinet__title i {
+  color: #d42ea5;
+  font-style: normal;
+}
+
+.js30-cabinet__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  border-top: 1px solid #e6d9eb;
+}
+
+.js30-cabinet__footer b {
+  color: #d42ea5;
+  font-size: 10px;
+}
+
+.js30-spark {
+  position: absolute;
+  color: #bd73c5;
+}
+
+.js30-spark--one {
+  top: 31px;
+  left: 22%;
+  font-size: 23px;
+}
+
+.js30-spark--two {
+  right: 20%;
+  bottom: 28px;
+  color: #e2a543;
+  font-size: 19px;
+}
+
 .artwork--todo {
   display: grid;
   place-items: center;

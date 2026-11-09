@@ -18,6 +18,20 @@ function ArrowIcon({ diagonal = false }: { diagonal?: boolean }) {
 }
 
 function ProjectArtwork({ project }: { project: Project }) {
+  if (project.visual === 'js30') {
+    return (
+      <div className="artwork artwork--js30" aria-hidden="true">
+        <span className="js30-spark js30-spark--one">✳</span>
+        <span className="js30-spark js30-spark--two">✦</span>
+        <div className="js30-cabinet">
+          <span className="js30-cabinet__eyebrow">PLAYER ONE, READY?</span>
+          <span className="js30-cabinet__title">30 DAYS<br />OF <i>JS</i></span>
+          <span className="js30-cabinet__footer">PICK A CABINET <b>↗</b></span>
+        </div>
+      </div>
+    );
+  }
+
   if (project.visual === 'todo') {
     return (
       <div className="artwork artwork--todo" aria-hidden="true">
